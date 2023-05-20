@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 外层容器 */
+.container{
+    width: 280px;
+    height: 400px;
+    margin:100px auto;
+}
+/* 图片切换 */
+.container .changeImg{
+    margin: 16px 0;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(126, 57, 218);
+    user-select: none;
+}
+.container .changeImg::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    top:calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    background: url(../img/sx.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* 图片容器 */
+.imgContainer{
+    height: 320px;
+    padding: 15px;
+    border: 1px solid #adadad;
+    /* 设置阴影 */
+    box-shadow: 0 0 2px #adadad;
+    border-radius: 15px;
+}
+.imgContainer h3{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.imgContainer .imgBox{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.imgBox .imgBlock{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+}
+.imgBox .imgGap{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 3px #adadad;
+}
+/* 滑动条 */
+.slider {
+    width: 100%;
+    height: 30px;
+    margin: 15px auto 0;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.slider .btn{
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    background: #fff url(../img/yz.png) no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 20;
+}
+.slider span{
+    transition: all .5s;
+}

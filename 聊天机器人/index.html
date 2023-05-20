@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="shortcut icon" href="./asset/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="chat_container">
+      <div class="chat_main">
+        <h1 class="chat_title">
+          <img src="./asset/robot.png" alt="">
+          AI聊天机器人
+        </h1>
+        <ul class="chat">
+          <li class="chat_item me">
+            <img src="./asset/avatar.png" alt="" class="chat_avatar">
+            <div class="chat_content">你好</div>
+            <div class="chat_date">2023-02-17 21:41:43</div>
+          </li>
+          <li class="chat_item">
+            <img src="./asset/robot-avatar.jpg" alt="" class="chat_avatar">
+            <div class="chat_content">你好</div>
+            <div class="chat_date">2023-02-17 21:41:43</div>
+          </li>
+        </ul>
+        <form class="msg_form">
+          <input type="text" name="content" max="20" id="txtMsg" placeholder="在这里输入要发送的消息，按回车键即可发送">
+          <button type="submit">发送</button>
+        </form>
+      </div>
+      <div class="chat_aside">
+        <img src="./asset/avatar.png" alt="">
+        <p id="loginId" class="aside_name"></p>
+        <p id="nickname" class="aside_account"></p>
+      </div>
+      <div class="close">
+        <i class="iconfont icon-close"></i>
+      </div>
+    </div>
+  </div>
+  <script src="./js/common.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

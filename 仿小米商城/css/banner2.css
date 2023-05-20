@@ -1,0 +1,63 @@
+/* 横幅2样式 */
+.banner2{
+  padding: 14px 0 26px;
+}
+.banner2 .banner2_service{
+  width: 234px;
+  height: 170px;
+  margin-right: 14px;
+  background-color: #5f5750;
+  padding: 3px;
+}
+.banner2_service .iconfont{
+  font-size: 26px;
+  display: block;
+}
+.banner2_service a{
+  width: 76px;
+  height: 82px;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+.banner2_service a::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 70px;
+  background-color: #665e57;
+  left: 0;
+  bottom: 6px;
+}
+.banner2_service a::after{
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 1px;
+  background-color: #665e57;
+  bottom: 0;
+  left: 6px;
+}
+.banner2_service a:nth-child(3n + 1)::before{
+  content: none;
+}
+.banner2_service a:nth-child(n + 4)::after{
+  content: none;
+}
+.banner2_service a:hover{
+  color: #fff;
+}
+.banner2_item{
+  width: 316px;
+  height: 170px;
+  margin-right: 15px;
+}
+.banner2_item:last-child{
+  margin-right: 0;
+}
+.banner2_item img{
+  width: 100%;
+}
+/* 横幅2样式END */

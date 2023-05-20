@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{  
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pages_container{
+    width: 100%;
+    height: 52px;
+    margin: 10px auto;
+    text-align: center;
+}
+.pages a {
+    display: inline-block;
+    height: 36px;
+    color: #001AC4;
+    border: 1px solid #ccc;
+    padding: 0 12px;
+    margin: 8px;
+    line-height: 36px;
+}
+.pages span {
+    height: 36px;
+    color: #000;
+}
+.pages .active{
+    border: none;
+    color: red;
+}
+.pages .disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}

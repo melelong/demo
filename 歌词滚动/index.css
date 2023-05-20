@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,1);
+  width: 100vw;
+  height: 100vh;
+}
+.container audio{
+  width: 50vw;
+  min-width: 500px;
+  margin: 10px 0 50px;
+}
+.lrcContainer{
+  height: 420px;
+  overflow: hidden;
+}
+.lrc{
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  width: 100vw;
+  transition: all .5s;
+}
+.lrc li {
+  height: 30px;
+  line-height: 30px;
+  cursor:pointer;
+  user-select: none;
+} 
+.select {
+  color:rgba(255,255,255,.8);
+  transform: scale(1.3);
+}

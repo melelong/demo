@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  canvas {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #000;
+  }
+</style>
+
+<body>
+  <canvas width="500px" height="300px"></canvas>
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    let height = 0;
+    let timeId = setInterval(() => {
+      // 清空
+      ctx.clearRect(0, 0, 500, 300);
+      ctx.fillRect(100, height, 50, 50);
+      height < 500 ? height += 2 : height = 0;
+    }, 1000 / 60);
+  </script>
+</body>
+
+</html>

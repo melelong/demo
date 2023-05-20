@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 90%;
+  outline: 1px solid #ccc;
+  margin: 8px auto;
+  position: relative;
+}
+.container img{
+  transition: all 0.5s;
+  position: absolute;
+  object-fit: cover;
+  /* width: 220px; */
+}

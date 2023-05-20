@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.cf::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+h2{
+  font-size: 100%;
+  font-weight: normal;
+}
+.menu-container{
+  width: 200px;
+  margin:  0 auto;
+  line-height: 30px;
+}
+.menu-container h2{
+  background-color: lightblue;
+  padding: 0 25px;
+  cursor: pointer;
+}
+.menu{
+  margin: 20px 0;
+}
+.submenu{
+  background-color: #e0f0f7;
+  padding: 0 30px;
+  height: 0;
+  overflow: hidden;
+}
+.submenu li{
+  height: 30px;
+}

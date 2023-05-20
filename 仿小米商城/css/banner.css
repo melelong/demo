@@ -1,0 +1,121 @@
+/* 横幅样式 */
+.banner{
+  height: 460px;
+  /* outline: 1px solid red; */
+  position: relative;
+}
+.banner_cover img{
+  width: 1226px;
+  height: 460px;
+}
+.banner_pointer i{
+  font-size: 30px;
+  color:inherit;
+}
+.banner_pointer {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #b8c3cb;
+  top:50%;
+  margin-top:-35px;
+}
+.banner_pointer:hover{
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.banner_pointer_left{
+  left: 234px;
+
+}
+.banner_pointer_right{
+  right: 0;
+}
+.banner_dots{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.banner_dots span{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.3);
+  cursor:pointer;
+}
+.banner_dots span:first-child,.banner_dots span:last-child{
+  margin: 0 8px;
+}
+span.banner_dots_selected{
+  border: 2px solid rgba(0, 0, 0, .4);
+  background-color: rgba(255,255,255,.3);
+}
+/* 横幅菜单 */
+.banner_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 234px;
+  height: 460px;
+  background-color: rgba(105,101,101,.6);
+  line-height: 42px;
+  padding:20px 0;
+}
+.banner_menu li {
+  width: 100%;
+  color: inherit;
+}
+.banner_menu li:hover > .banner_menu_item{
+  background-color: #ff6700;
+  cursor:pointer;
+}
+.banner_menu li:hover > .banner_submenu{
+  display: block;
+}
+.banner_menu_item{
+  color: #fff;
+}
+.banner_menu_item span {
+  margin-left: 30px;
+}
+.banner_menu_item i {
+  text-align: right;
+  margin-right: 20px;
+}
+.banner_submenu{
+  display: none;
+  width: calc(1226px - 234px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 234px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  /* background-color: red; */
+}
+.banner_submenu a{
+  width: 25%;
+  height: 16.666%;
+  padding: 0 20px;
+}
+.banner_submenu a > img{
+  width: 40px;
+  height: 40px;
+  margin-top: 17px;
+  margin-left: 12px;
+}
+.banner_submenu a > span{
+  width: 154px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height: inherit; */
+  margin-top: 18px;
+  /* background-color: red; */
+}
+/* 横幅样式END */

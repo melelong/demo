@@ -1,0 +1,13 @@
+.container{
+  text-align: center;
+}
+.container video{
+  width: 80%;
+}
+.container .controls{
+  margin: 1em 0;
+  display: none;
+}
+.active{
+  background-color: #ffbd80;
+}

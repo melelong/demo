@@ -1,0 +1,132 @@
+/* 页头样式 */
+.header{
+  /* background-color: red; */
+  height: 100px;
+  position: relative;
+}
+.header_logo h1{
+  display: none;
+}
+.header_logo{
+  width: 56px;
+  height: 56px;
+  /* background-color: green; */
+  background:url(../img/logo.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+.header_menu > a{
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  /* background-color: linen; */
+  padding: 0 10px;
+  font-size: 16px;
+}
+.header_menu:hover .header_submenu {
+  display: block;
+  z-index: 20;
+  background-color: #fff;
+}
+.header_submenu{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  display: none;
+}
+.header_cover img{
+  width: 160px;
+  height: 110px;
+}
+.header_cover{
+  border-right: 1px solid #eee;
+}
+.header_submenu a{
+  text-align: center;
+  width: 204px;
+  font-size: 12px;
+}
+.header_name{
+  margin-top: 10px;
+  color: #333;
+}
+.header_price{
+  color: #ff6700;
+}
+.header_search{
+  margin-top: 25px;
+  position: relative;
+}
+.header_search input{
+  width: 245px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 0 15px;
+}
+.header_search input:hover{
+  border: 1px solid #aaa;
+}
+.header_search input:hover ~ .header_searchicon{
+  border: 1px solid #aaa;
+  border-left: none;
+}
+.header_search input:focus{
+  border: 1px solid #ff6700;
+}
+.header_search input:focus ~ .header_suggest{
+  display: block;
+}
+.header_search input:focus ~ .header_searchicon{
+  border: 1px solid #ff6700;
+  border-left: none;
+}
+.header_searchicon{
+  width: 55px;
+  height: 50px;
+  color: #616161;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-left: none;
+}
+.header_searchicon .iconfont{
+  font-size: 20px;
+}
+.header_searchicon:hover{
+  color: #fff;
+  background-color: #ff6700;
+  cursor: pointer;
+  border: 1px solid #ff6700;
+}
+.header_suggest{
+  display: none;
+  width: 245px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  border: 1px solid #ff6700;
+  border-top: none;
+  background-color: #fff;
+  z-index: 30;
+}
+.header_suggest a{
+  display: block;
+  height: 30px;
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: 30px;
+}
+.header_suggest a:hover{
+  background-color: #eee;
+  color: inherit;
+}
+/* 页头样式END */

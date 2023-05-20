@@ -1,0 +1,10 @@
+/* 整合样式 */
+@import url(./common.css);  /* 通用样式 */
+@import url(./topnav.css);  /* 顶部导航样式 */
+@import url(./header.css);  /* 页头样式 */
+@import url(./banner.css);  /* 横幅样式 */
+@import url(./banner2.css);  /* 横幅2样式 */
+@import url(./main.css);  /* 主区域样式 */
+@import url(./footer.css);  /* 页脚样式 */
+@import url(./rm.css);  /* 右侧菜单栏 */
+/* 整合样式END */

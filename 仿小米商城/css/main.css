@@ -1,0 +1,83 @@
+/* 主区域样式 */
+.main{
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  padding: 22px 0;
+}
+.banner3{
+  display: block;
+}
+.banner3 img{
+  width: 100%;
+  display: block;
+}
+/* 橱窗样式 */
+.sc{
+  margin-top: 10px;
+}
+.sc_top{
+  height: 58px;
+  line-height: 58px;
+}
+.sc_title{
+  font-size: 22px;
+  font-weight: normal;
+}
+.sc_top .sc_more{
+  height: 100%;
+  cursor: pointer;
+}
+.sc_top .iconfont {
+  background-color: rgba(170,170,170,1);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  color:#fff;
+  line-height: 20px;
+  text-align: center;
+}
+.sc_more:hover .iconfont{
+  background-color: #ff6700;
+}
+.sc_item_first{
+  width: 234px;
+  height: 100%;
+  margin-right: 14px;
+}
+.sc_item_first img{
+  width: 100%;
+  height: 100%;
+}
+.sc_item_list{
+  width: 978px;
+  height: 100%;
+}
+.sc_item{
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.sc_item:nth-child(4n + 1){
+  margin-left: 0;
+}
+.sc_item img{
+  width: 160px;
+  height: 160px;
+  margin: 20px 0;
+}
+.sc_name{
+  color: #333;
+}
+.sc_desc{
+  font-size: 12px;
+  color: #b0b0b0;
+  margin: 3px 0 10px;
+}
+.sc_price{
+  color: #ff6700;
+}
+/* 主区域样式END */

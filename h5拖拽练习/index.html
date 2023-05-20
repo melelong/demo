@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    ul {
+      position: absolute;
+      top: 10px;
+      width: 30vw;
+      height: 50vh;
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+
+    ul:nth-child(1) {
+      left: 2vw;
+    }
+
+    ul:nth-child(2) {
+      right: 2vw;
+    }
+
+    li {
+      width: 80%;
+      height: 100px;
+      margin: 10px auto 0;
+      background-color: #abcdef;
+      text-align: center;
+      line-height: 100px;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="box1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <ul class="box2"></ul>
+  <script>
+    const $All = (selector) => document.querySelectorAll(selector)
+    const $ = (selector) => document.querySelector(selector)
+    const doms = {
+      lis: [...$All('li')],
+      boxes: [...$All("ul")]
+    }
+    let targetLi;
+    let targetBox;
+    function liInit({ lis }) {
+      lis.forEach(item => {
+        item.draggable = true
+        item.ondragstart = ({ target }) => {
+          targetLi = target
+        }
+      })
+    }
+    liInit(doms);
+    doms.boxes.forEach(item => {
+      item.ondragover = (e) => e.preventDefault()
+      item.ondrop = ({ target }) => {
+        if (target.tagName !== 'UL') return
+        target.appendChild(targetLi);
+        targetLi = null;
+        doms.lis = [...$All('li')];
+        liInit(doms)
+      }
+    }
+    )
+
+
+  </script>
+</body>
+
+</html>
