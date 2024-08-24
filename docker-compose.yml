@@ -1,0 +1,17 @@
+version: '3'
+# 定义网络
+networks:
+  app_network:
+    external: true
+services:
+  demo_res:
+    # 自动重启
+    restart: always
+    container_name: demo_res
+    image: ${DOCKER_IMAGE_URL}/${DOCKER_IMAGE_URL_NAME}/${IMAGE_NAME}:${IMAGE_TAG}
+    user: root
+    ports:
+      - '8093:80'
+    networks:
+      app_network:
+        ipv4_address: 192.168.3.6
